@@ -1,0 +1,17 @@
+# Ubuntu 15.04 with Java 8 installed.
+FROM ubuntu:latest
+#ENV http_proxy=http://k01677:Ra12@dkproxy-a.adep01.nordic.rsa-ins.com:8080
+#ENV https_proxy=https://k01677:Ra12@dkproxy-a.adep01.nordic.rsa-ins.com:8080
+MAINTAINER Saif Alhuttaitawi
+# Install OpenJDK-8
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get -y install default-jdk
+RUN apt-get -y update
+RUN apt-get -y install vim
+RUN apt-get -y update
+RUN apt-get -y install zip
+RUN apt-get -y update
+RUN apt-get -y install unzip
+#ENV http_proxy=
+#ENV https_proxy=
